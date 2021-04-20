@@ -24,7 +24,6 @@ public class RoadSpeedLimit {
 
         if (roadType == "Zona Rezidentiala") {
             return 30;
-
         } else {
             if (roadType == "Oras") {
                 return 50;

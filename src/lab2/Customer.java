@@ -2,11 +2,11 @@ package lab2;
 
 public class Customer {
 
-    String FirstName;
-    String LastName;
-    int age;
-    Adress adress;
-    PaymentMethod payment;
+    private String FirstName;
+    private String LastName;
+    private int age;
+    private Adress adress;
+    private PaymentMethod payment;
 
     public Customer(String FirstName, String LastName, int age) {
         this.FirstName = FirstName;
@@ -22,12 +22,6 @@ public class Customer {
         this.payment = payment;
     }
 
-    @Override
-    public String toString() {
-        return "Customer -> " + "FirstName: " + FirstName + ", LastName: " + LastName + ", Age: " + age + ", " + adress
-                + " , " + payment;
-    }
-
     public String getFirstName() {
         return FirstName;
     }
@@ -36,13 +30,12 @@ public class Customer {
         return LastName;
     }
 
-    public int getage() {
+    public int getAge() {
         return age;
     }
 
     public String getCompleteName() {
         return "Full name: " + FirstName + "" + LastName;
-
     }
 
     public PaymentMethod getPaymentMethod() {
@@ -51,6 +44,5 @@ public class Customer {
 
     public Adress getAdress() {
         return adress;
-
     }
 }

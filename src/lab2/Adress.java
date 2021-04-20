@@ -2,9 +2,9 @@ package lab2;
 
 public class Adress {
 
-    String street;
-    String city;
-    int number;
+    private String street;
+    private String city;
+    private int number;
 
     public Adress(String street, String city, int number) {
         this.street = street;
@@ -17,15 +17,15 @@ public class Adress {
         return "Adress --> " + "Street: " + street + ", City:" + city + ", Number: " + number;
     }
 
-    public String getstreet() {
+    public String getStreet() {
         return "Street name: " + street;
     }
 
-    public String getcity() {
+    public String getCity() {
         return "City: " + city;
     }
 
-    public String getnumber() {
+    public String getNumber() {
         return "Number: " + number;
     }
 

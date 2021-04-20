@@ -5,15 +5,9 @@ public class PaymentMethod {
 
     public PaymentMethod(String type) {
         this.type = type;
-
     }
 
-    @Override
-    public String toString() {
-        return "PaymentMethod: "  + type;
-    }
-
-    public String gettype() {
-        return "Type: " + type;
+    public String getType() {
+        return "Payment type: " + type;
     }
 }
