@@ -2,6 +2,7 @@ package lab3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class Demo {
     public static void main(String[] args) {
@@ -23,6 +24,21 @@ public class Demo {
             System.out.println();
 
         }
+
+
+        // Problema 4 - laborator 4
+        // numar culori
+        List<String> colors = new ArrayList<>();
+        for(Shape s: shapes) {
+            colors.add(s.getHexFillColor());
+        }
+        System.out.println("List - colors: " + colors);
+
+        Set<String> mySet = new HashSet<String>(colors);
+        for(String x: mySet){
+            System.out.println(x + " " + Collections.frequency(colors,x));
+        }
+
 
     }
 }
