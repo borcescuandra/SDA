@@ -17,11 +17,9 @@ public class Rectangle implements Shape {
         this.height = height;
         this.validateHex = new HexColorValidator();
         this.validateDimensions = new ShapeDimension();
-
     }
 
     public double getArea() {
-
         boolean ok = validateDimensions.validateRectangle(width, height);
 
         if (ok == true)
@@ -38,7 +36,6 @@ public class Rectangle implements Shape {
     }
 
     public String getHexFillColor() {
-
         boolean ok = validateHex.validate(fillColor);
 
         if (ok == true)
@@ -49,7 +46,6 @@ public class Rectangle implements Shape {
     }
 
     public void draw() {
-
         String a[][] = new String[width][height];
 
         for (int i = 0; i < width; i++)

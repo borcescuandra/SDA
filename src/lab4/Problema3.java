@@ -27,7 +27,8 @@ public class Problema3 {
         if (a == true) {
             System.out.println("The index of number " + String.format("%s", number) + " is " + position);
         } else {
-            System.out.println("The number " + String.format("%s", number) + " cannot be found, please enter another number!");
+            System.out.println("The number " + String.format("%s", number) + " cannot be found." +
+                    "");
         }
         return a;
     }

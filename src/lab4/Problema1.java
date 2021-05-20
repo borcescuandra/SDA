@@ -18,7 +18,7 @@ public class Problema1 {
         }
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Choose a number between 0 and 9 to set: ");
+        System.out.println("Choose a number between 0 and 9 to set as index: ");
         int position = -1;
         while (position < 0 || position > 9) {
             while (!scan.hasNextInt()) {

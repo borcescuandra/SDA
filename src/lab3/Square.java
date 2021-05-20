@@ -7,8 +7,8 @@ public class Square implements Shape {
     private int borderWidth;
     private int size;
     private HexColorValidator validate;
-
     private ShapeDimension validateDimensions;
+
 
     public Square(String fillColor, int borderWidth, int size) {
         this.fillColor = fillColor;
@@ -19,7 +19,6 @@ public class Square implements Shape {
     }
 
     public double getArea() {
-
         boolean ok = validateDimensions.validateSquare(size);
 
         if (ok == true)
@@ -36,7 +35,6 @@ public class Square implements Shape {
     }
 
     public String getHexFillColor() {
-
         boolean ok = validate.validate(fillColor);
 
         if (ok == true)
@@ -46,7 +44,6 @@ public class Square implements Shape {
     }
 
     public void draw() {
-
         String a[][] = new String[size][size];
 
         for (int i = 0; i < size; i++)

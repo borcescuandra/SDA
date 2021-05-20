@@ -1,6 +1,7 @@
 package lab3;
 
 public class HexColorValidator {
+
     Boolean validate(String colorHex) {
 
         Boolean ok = true;
@@ -26,13 +27,12 @@ public class HexColorValidator {
                     || colorHex.charAt(i) > 'f' && colorHex.charAt(i) > '9') {
                 ok = false;
                 throw new IllegalArgumentException(
-                        "TCodul Hex contine doar caractere intre A si F!");
+                        "Codul Hex contine doar caractere intre A si F!");
             }
 
             i++;
 
         }
-
         return ok;
 
     }
