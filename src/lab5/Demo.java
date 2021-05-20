@@ -67,9 +67,7 @@ public class Demo {
             System.out.println(key);
         }
 
-
-
-
+        scan.close();
 
     }
 }
